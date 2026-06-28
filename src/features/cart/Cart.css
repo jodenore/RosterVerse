@@ -232,6 +232,14 @@
   color: rgb(var(--text));
 }
 
+.cart-checkout-btn {
+  width: 100%;
+  border-color: rgb(var(--primary));
+  background-color: rgb(var(--primary));
+  color: rgb(var(--surface-raised));
+  font-weight: 750;
+}
+
 /* Animate the modal layers when they open. */
 .cart-overlay[data-state="open"] {
   animation: cart-overlay-in 180ms ease-out;

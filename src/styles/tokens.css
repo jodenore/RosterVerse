@@ -1,0 +1,67 @@
+:root {
+  /* Raw palette */
+  --mauve-shadow: 117, 70, 104;
+  --deep-teal: 88, 125, 113;
+  --medium-jungle: 77, 170, 87;
+  --celadon: 181, 221, 164;
+  --papaya-whip: 249, 236, 204;
+
+  /* Typography */
+  --font-display:
+    "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-primary:
+    "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Shape */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+
+  /* Rarity */
+  --rarity-common: 148, 163, 164;
+  --rarity-rare: 59, 130, 246;
+  --rarity-epic: 168, 85, 247;
+  --rarity-legendary: 204, 244, 72;
+}
+
+:root,
+[data-bs-theme="light"] {
+  --page-bg: var(--papaya-whip);
+  --surface: 255, 249, 232;
+  --surface-raised: 255, 253, 246;
+
+  --text: 53, 33, 49;
+  --text-muted: 112, 91, 105;
+  --border: 218, 198, 173;
+
+  --primary: var(--deep-teal);
+  --primary-hover: 64, 100, 89;
+  --accent: var(--medium-jungle);
+  --accent-soft: var(--celadon);
+  --focus: var(--deep-teal);
+
+  --bs-body-bg: rgb(var(--page-bg));
+  --bs-body-color: rgb(var(--text));
+  --bs-border-color: rgb(var(--border));
+  --bs-primary-rgb: var(--primary);
+}
+
+[data-bs-theme="dark"] {
+  --page-bg: 10, 17, 18;
+  --surface: 18, 29, 30;
+  --surface-raised: 27, 41, 40;
+
+  --text: 247, 238, 214;
+  --text-muted: 175, 188, 176;
+  --border: 55, 76, 72;
+
+  --primary: var(--celadon);
+  --primary-hover: 201, 235, 188;
+  --accent: 91, 191, 103;
+  --accent-soft: 47, 75, 61;
+  --focus: var(--celadon);
+
+  --bs-body-bg: rgb(var(--page-bg));
+  --bs-body-color: rgb(var(--text));
+  --bs-border-color: rgb(var(--border));
+  --bs-primary-rgb: var(--primary);
+}

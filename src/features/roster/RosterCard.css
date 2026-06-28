@@ -1,0 +1,100 @@
+.roster-card {
+  --roster-rarity: var(--rarity-common);
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 0.72fr) minmax(0, 1.28fr);
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(var(--roster-rarity), 0.5);
+  border-radius: var(--radius-md);
+  background-color: rgb(var(--surface));
+}
+
+.roster-card--rare {
+  --roster-rarity: var(--rarity-rare);
+}
+
+.roster-card--epic {
+  --roster-rarity: var(--rarity-epic);
+}
+
+.roster-card--legendary {
+  --roster-rarity: var(--rarity-legendary);
+}
+
+/* Roster artwork */
+
+.roster-card-media {
+  position: relative;
+  display: block;
+  min-height: 14rem;
+  overflow: hidden;
+  background-color: rgb(var(--surface-raised));
+}
+
+.roster-card-image,
+.roster-card-placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.roster-card-image {
+  object-fit: cover;
+  transition: transform 200ms ease;
+}
+
+.roster-card:hover .roster-card-image {
+  transform: scale(1.03);
+}
+
+.roster-card-placeholder {
+  display: grid;
+  place-items: center;
+  color: rgb(var(--text-muted));
+}
+
+.roster-card-rarity,
+.roster-card-quantity {
+  position: absolute;
+  top: 0.65rem;
+  min-height: 1.5rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.68rem;
+  font-weight: 850;
+}
+
+.roster-card-rarity {
+  left: 0.65rem;
+  background-color: rgb(var(--roster-rarity));
+  color: rgb(18, 29, 30);
+  text-transform: uppercase;
+}
+
+.roster-card-quantity {
+  right: 0.65rem;
+  background-color: rgba(var(--surface-raised), 0.94);
+  color: rgb(var(--text));
+  font-variant-numeric: tabular-nums;
+}
+
+/* Roster information */
+
+.roster-card-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1rem;
+}
+
+.roster-card-role,
+.roster-card-universe {
+  margin: 0;
+  color: rgb(var(--text-muted));
+}
+
+.roster-card-role {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}

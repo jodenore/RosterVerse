@@ -1,0 +1,13 @@
+.rating-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.rating-star {
+  color: rgba(var(--text-muted), 0.35);
+}
+
+.rating-star.is-filled {
+  color: rgb(var(--rarity-color, var(--accent)));
+}

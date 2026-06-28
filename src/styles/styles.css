@@ -1,0 +1,29 @@
+html {
+  color-scheme: light;
+}
+
+html[data-bs-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+  background-color: rgb(var(--page-bg));
+  color: rgb(var(--text));
+  font-family: var(--font-primary);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.root-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.main-section {
+  min-width: 0;
+}

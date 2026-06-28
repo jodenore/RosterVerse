@@ -1,0 +1,33 @@
+.character-details-page {
+  padding-block: 2rem 4rem;
+}
+
+.character-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(var(--text-muted));
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.character-back-link:hover {
+  color: rgb(var(--primary));
+}
+
+/* Mobile-first details layout */
+
+.character-details-layout {
+  display: grid;
+  gap: 2rem;
+  min-width: 0;
+}
+
+@media (min-width: 992px) {
+  .character-details-layout {
+    grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+    align-items: start;
+    gap: 3rem;
+  }
+}

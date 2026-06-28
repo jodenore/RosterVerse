@@ -1,0 +1,47 @@
+.character-gallery {
+  --swiper-theme-color: rgb(var(--primary));
+
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgb(var(--border));
+  border-radius: var(--radius-md);
+  background-color: rgb(var(--surface));
+}
+
+.character-gallery .swiper-slide {
+  aspect-ratio: 1;
+  background-color: rgb(var(--surface-raised));
+}
+
+.character-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Swiper controls */
+
+.character-gallery .swiper-button-prev,
+.character-gallery .swiper-button-next {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgb(var(--border));
+  border-radius: 50%;
+  background-color: rgba(var(--surface-raised), 0.92);
+}
+
+.character-gallery .swiper-button-prev::after,
+.character-gallery .swiper-button-next::after {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.character-gallery .swiper-pagination-bullet {
+  background-color: rgb(var(--text-muted));
+  opacity: 0.55;
+}
+
+.character-gallery .swiper-pagination-bullet-active {
+  background-color: rgb(var(--primary));
+  opacity: 1;
+}

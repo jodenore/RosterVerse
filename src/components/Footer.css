@@ -1,0 +1,133 @@
+.site-footer {
+  border-top: 1px solid rgb(var(--border));
+  background-color: rgb(var(--page-bg));
+  color: rgb(var(--text));
+}
+
+.site-footer-inner {
+  padding-block: 3rem 1.25rem;
+}
+
+.site-footer-main {
+  display: grid;
+  gap: 2.25rem;
+}
+
+/* Footer identity */
+
+.footer-brand {
+  max-width: 30rem;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: rgb(var(--text));
+  font-family: var(--font-display);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: rgb(var(--primary));
+}
+
+.footer-logo-mark {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-md);
+  background-color: rgb(var(--rarity-legendary));
+  color: rgb(18, 29, 30);
+}
+
+.footer-description {
+  max-width: 44ch;
+  margin: 1rem 0 0;
+  color: rgb(var(--text-muted));
+  line-height: 1.65;
+}
+
+/* Footer navigation */
+
+.footer-navigation-title {
+  margin: 0 0 0.75rem;
+  color: rgb(var(--primary));
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-navigation ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: rgb(var(--text-muted));
+  text-decoration: none;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  color: rgb(var(--text));
+}
+
+/* Footer product note */
+
+.footer-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 18rem;
+}
+
+.footer-note svg {
+  flex-shrink: 0;
+  color: rgb(var(--accent));
+}
+
+.footer-note p {
+  margin: 0;
+  color: rgb(var(--text-muted));
+  line-height: 1.55;
+}
+
+.footer-note strong {
+  display: block;
+  color: rgb(var(--text));
+}
+
+.site-footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(var(--border));
+  color: rgb(var(--text-muted));
+  font-size: 0.78rem;
+}
+
+.site-footer-bottom p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .site-footer-main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
